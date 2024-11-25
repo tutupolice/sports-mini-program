@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>田径课教学问卷</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question label {
+            font-size: 16px;
+        }
+        .question select {
+            font-size: 16px;
+            padding: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>田径课教学问卷</h1>
+        <p>您好，为了了解本节课教学情况，提高田径课的教学效果，占用您几分钟的时间填写这份问卷，本问卷实行匿名制，题目选项没有对错之分，请您根据直观的感受进行填写，感谢您的配合!</p>
+
+        <form id="surveyForm" action="/" method="POST">
+            <div class="question">
+                <label for="q1">1. 请您对本堂课教师运动示范能力进行评价（总分5分）</label>
+                <select id="q1" name="q1">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q2">2. 请您对本堂课教师语言表达能力进行评价（总分5分）</label>
+                <select id="q2" name="q2">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q3">3. 请您对本堂课教师课堂创新能力进行评价（总分5分）</label>
+                <select id="q3" name="q3">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q4">4. 请您对本堂课教师课堂组织能力进行评价（总分5分）</label>
+                <select id="q4" name="q4">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q5">5. 请您对本堂课教师课堂实践效果进行评价（总分5分）</label>
+                <select id="q5" name="q5">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q6">6. 请您对本堂课教师教案设计能力进行评价（总分5分）</label>
+                <select id="q6" name="q6">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <button type="submit">提交问卷</button>
+        </form>
+    </div>
+</body>
+</html>
